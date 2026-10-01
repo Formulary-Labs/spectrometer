@@ -1,0 +1,55 @@
+{
+  "name": "iso27001",
+  "slug": "iso27001-program",
+  "cadence": "7d",
+  "last_checkpoint": "2026-09-20T12:00:00Z",
+  "controls": [
+    {
+      "id": "A.8.2",
+      "title": "Access control",
+      "owner": "sec-team",
+      "status": "ok",
+      "next_due": "2026-09-30T00:00:00Z",
+      "category": "access"
+    },
+    {
+      "id": "A.5.9",
+      "title": "Secure configuration",
+      "owner": "platform",
+      "status": "at_risk",
+      "next_due": "2026-10-15T00:00:00Z",
+      "category": "config"
+    },
+    {
+      "id": "A.7.2",
+      "title": "Data leakage prevention",
+      "owner": "dpo",
+      "status": "ok",
+      "next_due": "2026-09-01T00:00:00Z",
+      "category": "privacy"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D-01",
+      "topic": "Adopt zero-trust network architecture",
+      "assigned_to": "sec-leader",
+      "opened": "2026-09-14T00:00:00Z",
+      "status": "pending"
+    },
+    {
+      "id": "D-02",
+      "topic": "Approve vendor: Acme Cloud",
+      "assigned_to": "ciso",
+      "opened": "2026-09-01T00:00:00Z",
+      "status": "decided"
+    },
+    {
+      "id": "D-03",
+      "topic": "Migrate to EU region for data residency",
+      "assigned_to": "platform",
+      "opened": "2026-08-25T00:00:00Z",
+      "status": "blocked"
+    }
+  ]
+}
